@@ -46,8 +46,8 @@ All paths in the app are relative and the manifest uses `./`, so hosting under a
 
 Assets are cached two ways: query strings in `index.html` and the service worker's `CACHE`. When you ship code, bump both together:
 
-1. Change every `?v=11` in `index.html` to the next number.
-2. Change `const VERSION = "11"` in `sw.js` to the same number.
+1. Change every `?v=…` number in `index.html` to the next number.
+2. Change `const VERSION = "…"` in `sw.js` to the same number.
 3. Run `node scripts/validate-data.js` — it fails if the two drift apart.
 
 Content-only edits (`js/data-*.js`) still need the bump, because those files are precached.
@@ -77,8 +77,8 @@ This validates content (unique keys, required fields, dialogue answers, duplicat
 ## What it does
 
 - **Today** — one tap starts a daily session sized to your goal (3, 5 or 8 new phrases), plus a direct route into vocabulary.
-- **Learn** — 18 real-life units per language, from greetings to health, opinions, the past and the future.
-- **Vocabulary** — 12 themed word sets per language (122 words each) with search, spaced review, and dedicated drills.
+- **Learn** — 24 real-life units per language, from greetings to health, opinions, the past, and B1 topics such as work, renting, and travel problems.
+- **Vocabulary** — 15 themed word sets per language (152 words each) with search, spaced review, and dedicated drills.
 - **Practice** — flip cards, listening recognition, typed production, speaking, word drills, and role-play dialogues.
 - **Progress** — streak, XP, accuracy, a seven-day chart, memory health, vocabulary progress, and per-unit completion.
 - **Settings** — daily goal, speech rate, auto-play, strict accents, English hints, light/dark/system theme, and per-language reset.
@@ -101,14 +101,14 @@ Every phrase includes a short note where it helps: register (`du`/`Sie`, `tu`/`L
 
 | Language | Units | Phrases | Word sets | Words | Role-plays |
 | --- | --- | --- | --- | --- | --- |
-| Italian | 18 | 208 | 12 | 122 | 7 |
-| German | 18 | 209 | 12 | 122 | 7 |
+| Italian | 24 | 280 | 15 | 152 | 10 |
+| German | 24 | 281 | 15 | 152 | 10 |
 
-Units: greetings and introductions, cafés and restaurants, getting around, shopping and money, small talk and daily life, help and emergencies, hotels and travel, plans and work, family and people, home and neighborhood, food and the market, health and the doctor, weather and seasons, opinions and feelings, talking about the past, plans and the future, phone and technology, culture and free time.
+Units: greetings and introductions, cafés and restaurants, getting around, shopping and money, small talk and daily life, help and emergencies, hotels and travel, plans and work, family and people, home and neighborhood, food and the market, health and the doctor, weather and seasons, opinions and feelings, talking about the past, plans and the future, phone and technology, culture and free time, work and career, renting and paperwork, travel problems, news and opinions, environment and city life, and money and banking. Units carry an A1, A2, or B1 level badge, and the Learn page groups them by level.
 
-Word sets: numbers, days and months, colors, family, food and drink, body and health, home and furniture, clothes, travel and transport, weather and nature, work and study, and high-frequency verbs.
+Word sets: numbers, days and months, colors, family, food and drink, body and health, home and furniture, clothes, travel and transport, weather and nature, work and study, high-frequency verbs, work and career, money and banking, and environment and city.
 
-Each language has seven dialogues: a café scene, meeting someone, finding the station, a pharmacy visit, a market, a broken appliance, and weekend plans.
+Each language has ten dialogues: a café scene, meeting someone, finding the station, a pharmacy visit, a market, a broken appliance, weekend plans, a job interview, a lost suitcase, and a leak in the bathroom.
 
 ## Project structure
 
@@ -243,4 +243,4 @@ Vocabulary lives in `vocab[]`:
 - There is no account sync and no server-side storage.
 - After a deploy, the service worker may show the cached shell for one visit; the next load picks up the new version.
 - Speech recognition is not available in every browser; the self-rating fallback keeps speaking practice usable.
-- Content spans A1–A2 everyday conversation, not exam preparation or grammar drilling.
+- Content spans A1–B1 everyday conversation, not exam preparation or grammar drilling.

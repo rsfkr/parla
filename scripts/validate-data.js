@@ -67,8 +67,8 @@ for (const langId of Object.keys(LANGUAGES)) {
     for (const field of ["id", "title", "local", "level", "icon", "tint", "blurb"]) {
       if (!unit[field]) fail(`${label}: missing ${field}`);
     }
-    if (unit.level && !["A1", "A2"].includes(unit.level)) {
-      fail(`${label}: level must be A1 or A2, found "${unit.level}"`);
+    if (unit.level && !["A1", "A2", "B1"].includes(unit.level)) {
+      fail(`${label}: level must be A1, A2, or B1, found "${unit.level}"`);
     }
     if (!Array.isArray(unit.phrases) || !unit.phrases.length) {
       fail(`${label}: no phrases`);

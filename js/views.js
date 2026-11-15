@@ -246,12 +246,24 @@ function unitCardHtml(unit) {
 
 /* ---------- Learn ---------- */
 
+const LEVEL_ORDER = ["A1", "A2", "B1"];
+const LEVEL_LABELS = { A1: "Foundations", A2: "Building confidence", B1: "Independence" };
+
+function unitsByLevel(units) {
+  return LEVEL_ORDER.map((level) => ({
+    level,
+    units: units.filter((unit) => (unit.level || "A1") === level)
+  })).filter((group) => group.units.length);
+}
+
 function viewLearn() {
   const L = getLang();
   const stats = learnStats();
   const vocab = vocabTotals();
   const pct = stats.total ? stats.learned / stats.total : 0;
   const units = getUnits(state.lang);
+  const levelGroups = unitsByLevel(units);
+  const orderedUnits = levelGroups.flatMap((group) => group.units);
   return `<div class="page">
     <div class="large-title">
       <h1>Learn</h1>
@@ -289,24 +301,36 @@ function viewLearn() {
         <h2 class="section-title">Course units</h2>
         <span class="tiny muted">${stats.total} phrases</span>
       </div>
-      <div class="list">
-        ${units
-          .map((unit, index) => {
-            const s = unitStats(unit);
-            const uPct = s.total ? Math.round((s.learned / s.total) * 100) : 0;
-            return `<button class="row" data-action="open-unit" data-unit="${unit.id}">
-              <span class="row-icon" style="--tint:${unit.tint}">${unit.icon}</span>
-              <span class="row-body">
-                <span class="row-title">${index + 1}. ${esc(unit.title)}</span>
-                <span class="row-sub">${esc(unit.level || "A1")} · ${esc(unit.local)}${s.due ? ` · ${s.due} due` : ""}</span>
-                <span class="progress-line" aria-hidden="true"><span style="width:${uPct}%"></span></span>
-              </span>
-              <span class="row-meta">${s.learned}/${s.total}</span>
-              ${svg("chevronRight", "chevron")}
-            </button>`;
-          })
-          .join("")}
-      </div>
+      ${levelGroups
+        .map(
+          (group) => `<div class="level-group">
+        <div class="level-head">
+          <span class="level-chip" data-level="${group.level}">${group.level}</span>
+          <span>${LEVEL_LABELS[group.level]}</span>
+          <span class="tiny">${group.units.length} units</span>
+        </div>
+        <div class="list">
+          ${group.units
+            .map((unit) => {
+              const index = orderedUnits.indexOf(unit);
+              const s = unitStats(unit);
+              const uPct = s.total ? Math.round((s.learned / s.total) * 100) : 0;
+              return `<button class="row" data-action="open-unit" data-unit="${unit.id}">
+                <span class="row-icon" style="--tint:${unit.tint}">${unit.icon}</span>
+                <span class="row-body">
+                  <span class="row-title">${index + 1}. ${esc(unit.title)}</span>
+                  <span class="row-sub">${esc(unit.level || "A1")} · ${esc(unit.local)}${s.due ? ` · ${s.due} due` : ""}</span>
+                  <span class="progress-line" aria-hidden="true"><span style="width:${uPct}%"></span></span>
+                </span>
+                <span class="row-meta">${s.learned}/${s.total}</span>
+                ${svg("chevronRight", "chevron")}
+              </button>`;
+            })
+            .join("")}
+        </div>
+      </div>`
+        )
+        .join("")}
     </section>
 
     <div class="coach">
@@ -314,7 +338,7 @@ function viewLearn() {
       <p><strong>How this course works:</strong> hear it, understand it, say it, type it. Each unit is a conversation you could actually have on a trip — not a grammar table.</p>
     </div>
 
-    <p class="app-foot">A1 → A2 · ${units.length} conversation units · ${stats.total} phrases · ${vocab.total} words<br>New material unlocks a few cards at a time, so reviews stay manageable.</p>
+    <p class="app-foot">A1 → B1 · ${units.length} conversation units · ${stats.total} phrases · ${vocab.total} words<br>New material unlocks a few cards at a time, so reviews stay manageable.</p>
   </div>`;
 }
 
@@ -336,7 +360,7 @@ function viewUnit() {
       <div>
         <div class="unit-title-row">
           <h1>${esc(unit.title)}</h1>
-          <span class="level-chip">${esc(unit.level || "A1")}</span>
+          <span class="level-chip" data-level="${esc(unit.level || "A1")}">${esc(unit.level || "A1")}</span>
         </div>
         <p class="unit-local">${esc(unit.local)}</p>
       </div>

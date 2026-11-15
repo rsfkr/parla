@@ -4,7 +4,7 @@
    index.html; scripts/validate-data.js checks that the two stay in sync.
    ========================================================================== */
 
-const VERSION = "11";
+const VERSION = "12";
 const CACHE = `parla-v${VERSION}`;
 
 const CORE = [

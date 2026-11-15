@@ -1,4 +1,4 @@
-/* Parla — Italian A1–A2 conversation deck */
+/* Parla — Italian A1–B1 conversation deck */
 window.LANGUAGES = window.LANGUAGES || {};
 
 window.LANGUAGES.it = {
@@ -7,7 +7,7 @@ window.LANGUAGES.it = {
   englishName: "Italian",
   flag: "🇮🇹",
   locale: "it-IT",
-  level: "A1–A2 · Everyday fluency",
+  level: "A1–B1 · Everyday fluency",
   tagline: "From your first caffè to real conversations.",
   gradient: ["#0B6B45", "#1D9A5B", "#63C98A"],
   accent: "#1D8A52",
@@ -417,6 +417,144 @@ window.LANGUAGES.it = {
         { target: "Mi sono divertito/a molto.", en: "I had a lot of fun.", say: "mee SOH-noh dee-ver-TEE-toh / -tah MOL-toh", note: "Divertirsi is reflexive: mi sono divertito/a. Literally 'I enjoyed myself'." },
         { target: "Ci vediamo dopo lo spettacolo.", en: "See you after the show.", say: "chee veh-DYAH-moh DOH-poh loh spet-TAH-koh-loh" }
       ]
+    },
+    {
+      id: "it-work",
+      title: "Work & career",
+      local: "Lavoro e carriera",
+      level: "B1",
+      icon: "💼",
+      tint: "#EDF2F9",
+      blurb: "Apply for a job, survive the interview, and talk about your working life.",
+      phrases: [
+        { target: "Sto cercando lavoro nel settore turistico.", en: "I'm looking for work in tourism.", say: "stoh chehr-KAN-doh lah-VOH-roh nel set-TOH-reh too-REE-stee-koh" },
+        { target: "Ho inviato il curriculum la settimana scorsa.", en: "I sent my CV last week.", say: "oh een-VYAH-toh eel koo-REE-koo-loom lah set-tee-MAH-nah SKOR-sah", note: "Curriculum stays the same in the plural: un curriculum, due curriculum." },
+        { target: "Vorrei candidarmi per la posizione di receptionist.", en: "I'd like to apply for the receptionist position.", say: "vor-RAY kan-dee-DAR-mee pehr lah poh-zee-TSYOH-neh dee reh-SEP-shoh-neest", note: "Candidarsi per means to apply for. In a cover letter: mi candido per…" },
+        { target: "Quali sono i requisiti?", en: "What are the requirements?", say: "KWAH-lee SOH-noh ee reh-kwee-ZEE-tee" },
+        { target: "Ho tre anni di esperienza.", en: "I have three years' experience.", say: "oh treh AN-nee dee es-peh-RYEN-tsah" },
+        { target: "Sono disponibile da subito.", en: "I'm available immediately.", say: "SOH-noh dee-spoh-NEE-bee-leh dah SOO-bee-toh" },
+        { target: "Il colloquio è andato bene.", en: "The interview went well.", say: "eel kol-LOH-kwyoh eh an-DAH-toh BEH-neh", note: "Andare bene in the passato prossimo: è andato bene. Colloquio alone can also mean a meeting or consultation." },
+        { target: "Lavoro dalle nove alle sei.", en: "I work from nine to six.", say: "lah-VOH-roh DAL-leh NOH-veh AL-leh SAY" },
+        { target: "Devo rispettare una scadenza.", en: "I have to meet a deadline.", say: "DEH-voh rees-pet-TAH-reh OO-nah skah-DEN-tsah" },
+        { target: "Possiamo fissare una riunione?", en: "Can we set up a meeting?", say: "pos-SYAH-moh fees-SAH-reh OO-nah ryoo-NYOH-neh" },
+        { target: "Ti mando i dettagli via email.", en: "I'll send you the details by email.", say: "tee MAN-doh ee det-TAH-lyee VEE-ah ee-MAYL" },
+        { target: "Sto pensando di cambiare lavoro.", en: "I'm thinking of changing jobs.", say: "stoh pen-SAN-doh dee kam-BYAH-reh lah-VOH-roh", note: "Pensare di + infinitive: sto pensando di partire — I'm thinking of leaving." }
+      ]
+    },
+    {
+      id: "it-rent",
+      title: "Renting & paperwork",
+      local: "Casa e burocrazia",
+      level: "B1",
+      icon: "🔑",
+      tint: "#FBF3DF",
+      blurb: "Find a flat, understand the contract, and get through the town hall.",
+      phrases: [
+        { target: "Sto cercando un appartamento in affitto.", en: "I'm looking for an apartment to rent.", say: "stoh chehr-KAN-doh oon ah-par-tah-MEN-toh een af-FEET-toh", note: "In affitto means for rent. Affittare works for both renting out and renting." },
+        { target: "Quanto è il deposito cauzionale?", en: "How much is the security deposit?", say: "KWAHN-toh eh eel deh-POH-zee-toh kow-tsyah-NAH-leh" },
+        { target: "Il contratto dura un anno.", en: "The contract lasts a year.", say: "eel kon-TRAHT-toh DOO-rah oon AN-noh" },
+        { target: "Devo portare un documento d'identità.", en: "I need to bring ID.", say: "DEH-voh por-TAH-reh oon doh-koo-MEN-toh dee-den-tee-TAH" },
+        { target: "Dove si trova l'ufficio anagrafe?", en: "Where is the registry office?", say: "DOH-veh see TROH-vah loof-FEE-choh ah-NAH-grah-feh", note: "L'anagrafe is where residents register. Bring your codice fiscale and passport." },
+        { target: "Ho bisogno del codice fiscale.", en: "I need a tax code.", say: "oh bee-ZOH-nyoh del KOH-dee-cheh fee-SKAH-leh", note: "The codice fiscale is essential for work, renting, and anything official in Italy." },
+        { target: "Le bollette sono incluse?", en: "Are utility bills included?", say: "leh bol-LET-teh SOH-noh een-KLOO-zeh", note: "Le bollette are electricity, gas, and water bills." },
+        { target: "Il padrone di casa non risponde.", en: "The landlord isn't answering.", say: "eel pah-DROH-neh dee KAH-zah non rees-PON-deh" },
+        { target: "Devo firmare il contratto oggi.", en: "I have to sign the contract today.", say: "DEH-voh feer-MAH-reh eel kon-TRAHT-toh OH-jee" },
+        { target: "Mi può dare una ricevuta?", en: "Can you give me a receipt?", say: "mee pwoh DAH-reh OO-nah ree-cheh-VOO-tah" },
+        { target: "L'ascensore è fuori servizio.", en: "The lift is out of order.", say: "lah-shen-SOH-reh eh FWOH-ree ser-VEE-tsyo", note: "Fuori servizio is the phrase on signs everywhere." },
+        { target: "Serve una marca da bollo.", en: "You need a revenue stamp.", say: "SER-veh OO-nah MAR-kah dah BOL-loh", note: "A marca da bollo is a tax stamp bought at a tobacconist for official forms." }
+      ]
+    },
+    {
+      id: "it-travel2",
+      title: "Travel problems",
+      local: "Viaggi e imprevisti",
+      level: "B1",
+      icon: "🧳",
+      tint: "#FCEDF0",
+      blurb: "Delays, cancellations, and lost luggage — staying calm and getting help.",
+      phrases: [
+        { target: "Il treno è in ritardo di venti minuti.", en: "The train is twenty minutes late.", say: "eel TREH-noh eh een ree-TAR-doh dee VEN-tee mee-NOO-tee" },
+        { target: "Il volo è stato cancellato.", en: "The flight was cancelled.", say: "eel VOH-loh eh STAH-toh kan-chehl-LAH-toh", note: "Passive with essere: è stato cancellato. Cancellare means to cancel." },
+        { target: "La mia valigia non è arrivata.", en: "My suitcase hasn't arrived.", say: "lah MEE-ah vah-LEE-jah non eh ar-ree-VAH-tah" },
+        { target: "Vorrei presentare un reclamo.", en: "I'd like to file a complaint.", say: "vor-RAY preh-zen-TAH-reh oon reh-KLAH-moh", note: "Un reclamo is a formal complaint; lamentarsi is to complain in general." },
+        { target: "Posso avere un rimborso?", en: "Can I get a refund?", say: "POS-soh ah-VEH-reh oon reem-BOR-soh" },
+        { target: "Ho perso la coincidenza.", en: "I missed the connection.", say: "oh PER-soh lah koh-een-chee-DEN-tsah", note: "Perdere is to lose or to miss: ho perso il treno, ho perso le chiavi." },
+        { target: "Da che binario parte?", en: "Which platform does it leave from?", say: "dah keh bee-NAH-ryoh PAR-teh" },
+        { target: "C'è un altro treno più tardi?", en: "Is there another train later?", say: "cheh oon AL-troh TREH-noh pyoo TAR-dee" },
+        { target: "Mi hanno danneggiato il bagaglio.", en: "They damaged my luggage.", say: "mee AN-noh dah-nej-JAH-toh eel bah-GAH-lyoh" },
+        { target: "Dove posso denunciare lo smarrimento?", en: "Where can I report the loss?", say: "DOH-veh POS-soh deh-noon-CHAH-reh loh zmar-ree-MEN-toh", note: "Denunciare lo smarrimento at the lost-luggage desk or the police." },
+        { target: "A causa dello sciopero, tutto è bloccato.", en: "Because of the strike, everything is blocked.", say: "ah KOW-zah DEL-loh SHOH-peh-roh TOOT-toh eh blok-KAH-toh", note: "A causa di = because of. Scioperi are common; check alerts before travelling." },
+        { target: "Per fortuna ho un'assicurazione.", en: "Luckily I have insurance.", say: "pehr for-TOO-nah oh oon as-see-koo-rah-TSYOH-neh" }
+      ]
+    },
+    {
+      id: "it-news",
+      title: "News & opinions",
+      local: "Notizie e opinioni",
+      level: "B1",
+      icon: "📰",
+      tint: "#EFEDFB",
+      blurb: "Discuss a headline, hedge your view, and disagree without falling out.",
+      phrases: [
+        { target: "Hai letto le notizie di oggi?", en: "Have you read today's news?", say: "eye LET-toh leh noh-TEE-tsyeh dee OH-jee" },
+        { target: "Secondo il giornale, i prezzi aumentano.", en: "According to the newspaper, prices are rising.", say: "seh-KON-doh eel jor-NAH-leh ee PRET-tsee ow-MEN-tah-noh" },
+        { target: "Non sono convinto di quello che dice.", en: "I'm not convinced by what he says.", say: "non SOH-noh kon-VEEN-toh dee KWEL-loh keh DEE-cheh", note: "Essere convinto di… The indicative is normal here; the subjunctive would sound formal." },
+        { target: "Da un lato è vero, dall'altro no.", en: "On one hand it's true, on the other it isn't.", say: "dah oon LAH-toh eh VEH-roh dal-LAL-troh noh", note: "A ready-made pair for balanced opinions — very B1." },
+        { target: "Sono d'accordo, ma con qualche dubbio.", en: "I agree, but with some doubts.", say: "SOH-noh dak-KOR-doh mah kon KWAHL-keh DOOB-byoh" },
+        { target: "Dipende da come lo si guarda.", en: "It depends how you look at it.", say: "dee-PEN-deh dah KOH-meh loh see GWAR-dah", note: "Impersonal si: come lo si guarda = how one looks at it." },
+        { target: "Ne parlano tutti sui social.", en: "Everyone's talking about it on social media.", say: "neh PAR-lah-noh TOOT-tee swee SOH-chahl", note: "Ne replaces di + thing: parlare di → parlarne." },
+        { target: "Non mi fido di quella fonte.", en: "I don't trust that source.", say: "non mee FEE-doh dee KWEL-lah FON-teh", note: "Fidarsi di = to trust. Non fidarti di tutto quello che leggi." },
+        { target: "È una questione complicata.", en: "It's a complicated issue.", say: "eh OO-nah kwes-TYOH-neh kom-plee-KAH-tah" },
+        { target: "Potrebbe avere ragione lui.", en: "He might be right.", say: "poh-TREB-beh ah-VEH-reh rah-JOH-neh LOO-ee", note: "Potrebbe is the conditional of potere: could or might." },
+        { target: "Inoltre, ci sono altri problemi.", en: "Moreover, there are other problems.", say: "ee-NOL-treh chee SOH-noh AL-tree proh-BLEH-mee", note: "Formal connectors: inoltre, tuttavia, quindi, invece." },
+        { target: "Tuttavia, la situazione sta migliorando.", en: "However, the situation is improving.", say: "toot-TAH-vee-ah lah see-too-ah-TSYOH-neh stah mee-lyoh-RAN-doh" }
+      ]
+    },
+    {
+      id: "it-env",
+      title: "Environment & city life",
+      local: "Ambiente e città",
+      level: "B1",
+      icon: "🌱",
+      tint: "#EAF6F0",
+      blurb: "Recycling, transport, and the small choices that shape a city.",
+      phrases: [
+        { target: "Dobbiamo fare la raccolta differenziata.", en: "We have to sort the recycling.", say: "dob-BYAH-moh FAH-reh lah rak-KOL-tah deef-feh-REN-tsyah-tah", note: "Every comune has its own recycling rules — check the calendar." },
+        { target: "Dove butto la plastica?", en: "Where do I throw plastic?", say: "DOH-veh BOOT-toh lah PLAH-stee-kah", note: "Umido is food waste, secco is general waste, vetro is glass." },
+        { target: "Il centro è chiuso al traffico.", en: "The centre is closed to traffic.", say: "eel CHEN-troh eh KYOO-zoh al TRAF-fee-koh", note: "Many centres are a ZTL — zona a traffico limitato." },
+        { target: "Preferisco andare in bicicletta.", en: "I prefer cycling.", say: "preh-feh-REES-koh an-DAH-reh een bee-chee-KLET-tah" },
+        { target: "I mezzi pubblici sono economici.", en: "Public transport is cheap.", say: "ee MET-tsee POOB-blee-chee SOH-noh eh-koh-NOH-mee-chee" },
+        { target: "L'aria è molto inquinata qui.", en: "The air is very polluted here.", say: "LAH-ryah eh MOL-toh een-kwee-NAH-tah kwee" },
+        { target: "Possiamo ridurre i rifiuti.", en: "We can reduce waste.", say: "pos-SYAH-moh ree-DOOR-reh ee ree-FYOO-tee" },
+        { target: "Hanno installato nuove colonnine.", en: "They installed new charging points.", say: "AN-noh een-stal-LAH-toh NWOH-veh koh-lon-NEE-neh", note: "Le colonnine are EV charging points, short for colonnine di ricarica." },
+        { target: "Il parco è stato rinnovato.", en: "The park has been renovated.", say: "eel PAR-koh eh STAH-toh reen-noh-VAH-toh", note: "Passive with essere: è stato rinnovato." },
+        { target: "Bisogna risparmiare energia.", en: "We need to save energy.", say: "bee-ZOH-nyah rees-par-MYAH-reh eh-ner-JEE-ah", note: "Bisogna + infinitive is an impersonal 'one must'." },
+        { target: "Sarebbe meglio usare il treno.", en: "It would be better to take the train.", say: "sah-REB-beh MEH-lyoh oo-ZAH-reh eel TREH-noh" },
+        { target: "Spero che cambino presto le cose.", en: "I hope things change soon.", say: "SPEH-roh keh KAHM-bee-noh PRES-toh leh KOH-zeh", note: "Sperare che takes the subjunctive: cambino, not cambiano." }
+      ]
+    },
+    {
+      id: "it-money",
+      title: "Money & banking",
+      local: "Soldi e banca",
+      level: "B1",
+      icon: "💳",
+      tint: "#F0EFEA",
+      blurb: "Open an account, question a charge, and talk about budgets.",
+      phrases: [
+        { target: "Vorrei aprire un conto corrente.", en: "I'd like to open a current account.", say: "vor-RAY ah-PREE-reh oon KON-toh kor-REN-teh" },
+        { target: "Quali sono le commissioni mensili?", en: "What are the monthly fees?", say: "KWAH-lee SOH-noh leh kom-mees-SYOH-nee men-SEE-lee" },
+        { target: "Ho dimenticato il PIN.", en: "I forgot my PIN.", say: "oh dee-men-tee-KAH-toh eel peen" },
+        { target: "Devo prelevare contanti.", en: "I need to withdraw cash.", say: "DEH-voh preh-leh-VAH-reh kon-TAN-tee", note: "Prelevare = to withdraw; il prelievo = a withdrawal." },
+        { target: "Il bonifico è arrivato?", en: "Has the transfer arrived?", say: "eel boh-NEE-fee-koh eh ar-ree-VAH-toh" },
+        { target: "Posso pagare a rate?", en: "Can I pay in instalments?", say: "POS-soh pah-GAH-reh ah RAH-teh" },
+        { target: "Mi hanno addebitato due volte.", en: "They charged me twice.", say: "mee AN-noh ad-deh-bee-TAH-toh DOO-eh VOL-teh", note: "Addebitare = to charge to an account." },
+        { target: "Il mio stipendio arriva il primo del mese.", en: "My salary arrives on the first of the month.", say: "eel MEE-oh stee-PEN-dyoh ar-REE-vah eel PREE-moh del MEH-zeh" },
+        { target: "Sto cercando di risparmiare.", en: "I'm trying to save money.", say: "stoh chehr-KAN-doh dee rees-par-MYAH-reh" },
+        { target: "Questo mese ho speso troppo.", en: "I spent too much this month.", say: "KWES-toh MEH-zeh oh SPEH-zoh TROP-poh" },
+        { target: "Ho bisogno di un preventivo.", en: "I need a quote.", say: "oh bee-ZOH-nyoh dee oon preh-ven-TEE-voh" },
+        { target: "Meglio controllare l'estratto conto.", en: "Better check the bank statement.", say: "MEH-lyoh kon-trol-LAH-reh les-TRAHT-toh KON-toh" }
+      ]
     }
   ],
   vocab: [
@@ -660,6 +798,66 @@ window.LANGUAGES.it = {
         { term: "sapere", en: "to know", say: "sah-PEH-reh", note: "Present: so, sai, sa, sappiamo, sapete, sanno." },
         { term: "vedere", en: "to see", say: "veh-DEH-reh", note: "Present: vedo, vedi, vede, vediamo, vedete, vedono." },
         { term: "mangiare", en: "to eat", say: "man-JAH-reh", note: "Present: mangio, mangi, mangia, mangiamo, mangiate, mangiano." }
+      ]
+    },
+    {
+      id: "it-v-career",
+      title: "Work & career",
+      local: "Lavoro e carriera",
+      icon: "💼",
+      tint: "#EDF2F9",
+      blurb: "The words on a job advert, in an interview, and in a contract.",
+      words: [
+        { term: "il colloquio", en: "job interview", say: "eel kol-LOH-kwyoh", note: "Colloquio di lavoro is unambiguous; colloquio alone can also be a consultation." },
+        { term: "il curriculum", en: "CV / résumé", say: "eel koo-REE-koo-loom", note: "Invariable: un curriculum, due curriculum." },
+        { term: "lo stipendio", en: "salary", say: "loh stee-PEN-dyoh" },
+        { term: "la scadenza", en: "deadline", say: "lah skah-DEN-tsah" },
+        { term: "la riunione", en: "meeting", say: "lah ryoo-NYOH-neh" },
+        { term: "il tirocinio", en: "internship", say: "eel tee-roh-CHEE-nyoh" },
+        { term: "l'assunzione", en: "hiring", say: "las-soon-TSYOH-neh", note: "Assumere = to hire. Un'assunzione is also a hire as a noun." },
+        { term: "il referente", en: "contact person", say: "eel reh-feh-REN-teh" },
+        { term: "la mansione", en: "duty / role", say: "lah man-SYOH-neh", note: "Usually plural in job adverts: le mansioni." },
+        { term: "il contratto", en: "contract", say: "eel kon-TRAHT-toh" }
+      ]
+    },
+    {
+      id: "it-v-banking",
+      title: "Money & banking",
+      local: "Soldi e banca",
+      icon: "💳",
+      tint: "#F0EFEA",
+      blurb: "Counters, cards, fees, and the words on a statement.",
+      words: [
+        { term: "il conto corrente", en: "current account", say: "eel KON-toh kor-REN-teh" },
+        { term: "il bonifico", en: "bank transfer", say: "eel boh-NEE-fee-koh" },
+        { term: "il prelievo", en: "withdrawal", say: "eel preh-LYEH-voh" },
+        { term: "la commissione", en: "fee", say: "lah kom-mees-SYOH-neh", note: "Usually plural: le commissioni." },
+        { term: "la rata", en: "instalment", say: "lah RAH-tah", note: "Pagare a rate = to pay in instalments." },
+        { term: "lo scontrino", en: "till receipt", say: "loh skon-TREE-noh", note: "Lo scontrino comes from a shop till; la ricevuta is a formal receipt." },
+        { term: "la ricevuta", en: "receipt", say: "lah ree-cheh-VOO-tah" },
+        { term: "il risparmio", en: "savings", say: "eel rees-PAR-myoh" },
+        { term: "il debito", en: "debt", say: "eel DEH-bee-toh" },
+        { term: "lo sportello", en: "counter / branch", say: "loh spor-TEL-loh", note: "Also the window at a station or office." }
+      ]
+    },
+    {
+      id: "it-v-city",
+      title: "Environment & city",
+      local: "Ambiente e città",
+      icon: "🌱",
+      tint: "#EAF6F0",
+      blurb: "Bins, bikes, and the vocabulary of a liveable city.",
+      words: [
+        { term: "la raccolta differenziata", en: "recycling", say: "lah rak-KOL-tah deef-feh-REN-tsyah-tah" },
+        { term: "il rifiuto", en: "waste / rubbish", say: "eel ree-FYOO-toh", note: "Usually plural: i rifiuti." },
+        { term: "l'inquinamento", en: "pollution", say: "leen-kwee-nah-MEN-toh" },
+        { term: "il quartiere", en: "neighborhood", say: "eel kwar-TYEH-reh" },
+        { term: "il marciapiede", en: "pavement", say: "eel mar-chah-PYEH-deh" },
+        { term: "la pista ciclabile", en: "cycle lane", say: "lah PEE-stah chee-KLAH-bee-leh" },
+        { term: "il mezzo pubblico", en: "public transport", say: "eel MET-tsoh POOB-blee-koh", note: "Usually plural: i mezzi pubblici." },
+        { term: "l'energia", en: "energy", say: "leh-ner-JEE-ah" },
+        { term: "lo spreco", en: "waste (of resources)", say: "loh SPREH-koh", note: "Sprecare = to waste. Lo spreco alimentare is food waste." },
+        { term: "il verde pubblico", en: "public green space", say: "eel VER-deh POOB-blee-koh" }
       ]
     }
   ],
@@ -990,6 +1188,171 @@ window.LANGUAGES.it = {
           answer: 0
         },
         { speaker: "Marco", text: "Con piacere!", en: "With pleasure!" }
+      ]
+    },
+    {
+      id: "it-d-job",
+      unitId: "it-work",
+      title: "A job interview",
+      local: "Un colloquio di lavoro",
+      icon: "💼",
+      place: "A hotel office in Florence, Tuesday morning",
+      lines: [
+        { speaker: "Direttrice", text: "Buongiorno, grazie per essere venuto. Mi parli un po' di lei.", en: "Good morning, thanks for coming. Tell me a little about yourself." },
+        {
+          you: true,
+          prompt: "Say you have three years' experience in tourism.",
+          options: [
+            { text: "Ho tre anni di esperienza nel settore turistico.", en: "I have three years' experience in tourism." },
+            { text: "Ho tre anni e vivo a Firenze.", en: "I'm three years old and live in Florence." },
+            { text: "Vorrei un caffè, per favore.", en: "I'd like a coffee, please." }
+          ],
+          answer: 0
+        },
+        { speaker: "Direttrice", text: "Bene. Perché vuole lavorare con noi?", en: "Good. Why do you want to work with us?" },
+        {
+          you: true,
+          prompt: "Say you like working with people.",
+          options: [
+            { text: "Perché mi piace lavorare a contatto con le persone.", en: "Because I like working with people." },
+            { text: "Perché il treno è in ritardo.", en: "Because the train is late." },
+            { text: "Perché ho dimenticato il PIN.", en: "Because I forgot my PIN." }
+          ],
+          answer: 0
+        },
+        { speaker: "Direttrice", text: "Quando potrebbe iniziare?", en: "When could you start?" },
+        {
+          you: true,
+          prompt: "Say you're available immediately.",
+          options: [
+            { text: "Sono disponibile da subito.", en: "I'm available immediately." },
+            { text: "Sono in vacanza da subito.", en: "I'm on holiday immediately." },
+            { text: "Sono a casa da subito.", en: "I'm at home immediately." }
+          ],
+          answer: 0
+        },
+        { speaker: "Direttrice", text: "Perfetto. Le faremo sapere entro venerdì.", en: "Perfect. We'll let you know by Friday." },
+        {
+          you: true,
+          prompt: "Thank her and ask whether you should send anything else.",
+          options: [
+            { text: "Grazie. Devo mandare altri documenti?", en: "Thank you. Should I send any other documents?" },
+            { text: "Grazie. Devo pagare il conto?", en: "Thank you. Should I pay the bill?" },
+            { text: "Grazie. Devo prendere il treno?", en: "Thank you. Should I take the train?" }
+          ],
+          answer: 0
+        },
+        { speaker: "Direttrice", text: "No, va bene così. A presto!", en: "No, that's fine. See you soon!" }
+      ]
+    },
+    {
+      id: "it-d-luggage",
+      unitId: "it-travel2",
+      title: "The suitcase didn't arrive",
+      local: "La valigia non è arrivata",
+      icon: "🧳",
+      place: "Lost luggage desk, Rome airport",
+      lines: [
+        { speaker: "Addetta", text: "Buongiorno, come posso aiutarla?", en: "Good morning, how can I help you?" },
+        {
+          you: true,
+          prompt: "Say your suitcase hasn't arrived.",
+          options: [
+            { text: "La mia valigia non è arrivata.", en: "My suitcase hasn't arrived." },
+            { text: "Il mio volo è a Roma.", en: "My flight is in Rome." },
+            { text: "La mia camera è al terzo piano.", en: "My room is on the third floor." }
+          ],
+          answer: 0
+        },
+        { speaker: "Addetta", text: "Ha il numero del bagaglio?", en: "Do you have the baggage number?" },
+        {
+          you: true,
+          prompt: "Say yes and hand over the receipt.",
+          options: [
+            { text: "Sì, ecco la ricevuta.", en: "Yes, here's the receipt." },
+            { text: "No, ecco il passaporto.", en: "No, here's the passport." },
+            { text: "Sì, ecco il conto.", en: "Yes, here's the bill." }
+          ],
+          answer: 0
+        },
+        { speaker: "Addetta", text: "Il bagaglio è rimasto a Monaco. Arriverà domani mattina.", en: "The suitcase stayed in Munich. It will arrive tomorrow morning." },
+        {
+          you: true,
+          prompt: "Ask where to report the loss and whether they can deliver it.",
+          options: [
+            { text: "Dove posso denunciare lo smarrimento? Potete consegnarla in albergo?", en: "Where can I report the loss? Can you deliver it to my hotel?" },
+            { text: "Dove posso comprare un biglietto? Posso pagare in contanti?", en: "Where can I buy a ticket? Can I pay in cash?" },
+            { text: "Dove posso prenotare una camera? Posso restare qui?", en: "Where can I book a room? Can I stay here?" }
+          ],
+          answer: 0
+        },
+        { speaker: "Addetta", text: "Compili questo modulo e ci lasci il numero dell'albergo.", en: "Fill in this form and leave us your hotel number." },
+        {
+          you: true,
+          prompt: "Ask if you can get a refund for things you had to buy.",
+          options: [
+            { text: "Posso avere un rimborso per le spese?", en: "Can I get a refund for the expenses?" },
+            { text: "Posso avere un altro volo gratis?", en: "Can I have another free flight?" },
+            { text: "Posso avere una ricevuta per il treno?", en: "Can I have a receipt for the train?" }
+          ],
+          answer: 0
+        },
+        { speaker: "Addetta", text: "Sì, conservi tutti gli scontrini.", en: "Yes, keep all the receipts." }
+      ]
+    },
+    {
+      id: "it-d-flat",
+      unitId: "it-rent",
+      title: "A leak in the bathroom",
+      local: "Una perdita in bagno",
+      icon: "🔑",
+      place: "A phone call to the landlord",
+      lines: [
+        { speaker: "Padrone di casa", text: "Pronto?", en: "Hello?" },
+        {
+          you: true,
+          prompt: "Say there's a water leak in the bathroom.",
+          options: [
+            { text: "Buongiorno, c'è una perdita d'acqua in bagno.", en: "Good morning, there's a water leak in the bathroom." },
+            { text: "Buongiorno, c'è una festa in bagno.", en: "Good morning, there's a party in the bathroom." },
+            { text: "Buongiorno, c'è un treno in bagno.", en: "Good morning, there's a train in the bathroom." }
+          ],
+          answer: 0
+        },
+        { speaker: "Padrone di casa", text: "Da quanto tempo?", en: "Since when?" },
+        {
+          you: true,
+          prompt: "Say since yesterday evening.",
+          options: [
+            { text: "Da ieri sera.", en: "Since yesterday evening." },
+            { text: "Da domani mattina.", en: "Since tomorrow morning." },
+            { text: "Per due anni.", en: "For two years." }
+          ],
+          answer: 0
+        },
+        { speaker: "Padrone di casa", text: "Ho capito. Chiamo l'idraulico.", en: "I understand. I'll call the plumber." },
+        {
+          you: true,
+          prompt: "Ask if he can come today.",
+          options: [
+            { text: "Può venire oggi?", en: "Can he come today?" },
+            { text: "Può pagare oggi?", en: "Can he pay today?" },
+            { text: "Può cucinare oggi?", en: "Can he cook today?" }
+          ],
+          answer: 0
+        },
+        { speaker: "Padrone di casa", text: "Nel pomeriggio, verso le quattro.", en: "In the afternoon, around four." },
+        {
+          you: true,
+          prompt: "Say you'll be home and ask him to confirm the time.",
+          options: [
+            { text: "Va bene, sarò a casa. Mi conferma l'orario?", en: "All right, I'll be home. Can you confirm the time?" },
+            { text: "Va bene, sarò in ufficio. Mi conferma il prezzo?", en: "All right, I'll be at the office. Can you confirm the price?" },
+            { text: "Va bene, sarò in vacanza. Mi conferma l'indirizzo?", en: "All right, I'll be on holiday. Can you confirm the address?" }
+          ],
+          answer: 0
+        },
+        { speaker: "Padrone di casa", text: "Certo. A più tardi.", en: "Of course. See you later." }
       ]
     }
   ]

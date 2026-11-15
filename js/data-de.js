@@ -1,4 +1,4 @@
-/* Parla — German A1–A2 conversation deck */
+/* Parla — German A1–B1 conversation deck */
 window.LANGUAGES = window.LANGUAGES || {};
 
 window.LANGUAGES.de = {
@@ -7,7 +7,7 @@ window.LANGUAGES.de = {
   englishName: "German",
   flag: "🇩🇪",
   locale: "de-DE",
-  level: "A1–A2 · Everyday fluency",
+  level: "A1–B1 · Everyday fluency",
   tagline: "From Guten Tag to real conversations.",
   gradient: ["#3A2B1E", "#A66A16", "#E3A83B"],
   accent: "#A66A16",
@@ -418,6 +418,144 @@ window.LANGUAGES.de = {
         { target: "Es hat mir sehr gefallen.", en: "I enjoyed it very much.", say: "es haht meer zair geh-FAHL-en", note: "Gefallen works like 'to please': literally 'it has pleased me very much'." },
         { target: "Wir sehen uns nach der Vorstellung.", en: "See you after the show.", say: "veer ZAY-en oons nakh dair for-SHTEL-oong" }
       ]
+    },
+    {
+      id: "de-work",
+      title: "Work & career",
+      local: "Arbeit und Karriere",
+      level: "B1",
+      icon: "💼",
+      tint: "#EDF2F9",
+      blurb: "Apply for a job, survive the interview, and talk about your working life.",
+      phrases: [
+        { target: "Ich suche eine Stelle im Tourismus.", en: "I'm looking for a job in tourism.", say: "ikh ZOO-kheh EYE-neh SHTEL-leh im too-REES-moos", note: "Die Stelle is a specific position; die Arbeit is work in general." },
+        { target: "Ich habe meinen Lebenslauf letzte Woche geschickt.", en: "I sent my CV last week.", say: "ikh HAH-beh MY-nen LAY-bens-lowf LETS-teh VOKH-eh geh-SHIKT" },
+        { target: "Ich möchte mich um die Stelle als Rezeptionist bewerben.", en: "I'd like to apply for the receptionist position.", say: "ikh MÖKH-teh mikh oom dee SHTEL-leh ahls reh-tsep-tsyoh-NIST beh-VAIR-ben", note: "Sich bewerben um + accusative = to apply for a position." },
+        { target: "Welche Voraussetzungen gibt es?", en: "What are the requirements?", say: "VEL-kheh FOR-ows-zet-soong-en geept es" },
+        { target: "Ich habe drei Jahre Berufserfahrung.", en: "I have three years' professional experience.", say: "ikh HAH-beh dry YAH-reh beh-ROOFS-air-FAH-roong" },
+        { target: "Ich kann sofort anfangen.", en: "I can start immediately.", say: "ikh kahn zoh-FORT AHN-fahng-en" },
+        { target: "Das Vorstellungsgespräch lief gut.", en: "The interview went well.", say: "dahs FOR-shtel-oongs-geh-shprekh leef goot", note: "lief is the simple past of laufen, used here for how something went." },
+        { target: "Ich arbeite von neun bis sechs.", en: "I work from nine to six.", say: "ikh AR-by-teh fon noyn bis zeks" },
+        { target: "Ich muss eine Frist einhalten.", en: "I have to meet a deadline.", say: "ikh moos EYE-neh frist INE-hahl-ten", note: "Eine Frist einhalten = to meet a deadline; eine Frist verlängern = to extend one." },
+        { target: "Können wir ein Meeting ansetzen?", en: "Can we set up a meeting?", say: "KÖN-nen veer ine MEE-ting AHN-zet-sen" },
+        { target: "Ich schicke dir die Details per E-Mail.", en: "I'll send you the details by email.", say: "ikh SHIK-keh deer dee deh-TILES pair ee-MAYL" },
+        { target: "Ich denke darüber nach, den Job zu wechseln.", en: "I'm thinking about changing jobs.", say: "ikh DEN-keh dah-ROO-ber nakh dane job tsoo VEKS-eln", note: "nachdenken über + accusative, with zu + infinitive at the end." }
+      ]
+    },
+    {
+      id: "de-rent",
+      title: "Renting & paperwork",
+      local: "Wohnen und Amt",
+      level: "B1",
+      icon: "🔑",
+      tint: "#FBF3DF",
+      blurb: "Find a flat, understand the contract, and get through the registration office.",
+      phrases: [
+        { target: "Ich suche eine Wohnung zur Miete.", en: "I'm looking for an apartment to rent.", say: "ikh ZOO-kheh EYE-neh VOH-noong tsoor MEE-teh" },
+        { target: "Wie hoch ist die Kaution?", en: "How much is the deposit?", say: "vee hohkh ist dee kow-TSYOHN" },
+        { target: "Der Vertrag läuft ein Jahr.", en: "The contract runs for a year.", say: "dair fair-TRAHK loyft ine yahr" },
+        { target: "Ich muss meinen Ausweis mitbringen.", en: "I have to bring my ID.", say: "ikh moos MY-nen OWS-vice MIT-bring-en" },
+        { target: "Wo ist das Einwohnermeldeamt?", en: "Where is the registration office?", say: "voh ist dahs INE-voh-ner-mel-deh-ahmt", note: "Register your address within two weeks of moving in." },
+        { target: "Ich brauche eine Meldebescheinigung.", en: "I need a registration certificate.", say: "ikh BROW-kheh EYE-neh MEL-deh-beh-shy-ni-goong" },
+        { target: "Sind die Nebenkosten inklusive?", en: "Are utilities included?", say: "zint dee NAY-ben-kos-ten in-kloo-ZEE-veh", note: "Nebenkosten are service charges: heating, water, rubbish." },
+        { target: "Der Vermieter antwortet nicht.", en: "The landlord isn't answering.", say: "dair fair-MEE-ter ANT-vor-tet nikht" },
+        { target: "Ich muss den Vertrag heute unterschreiben.", en: "I have to sign the contract today.", say: "ikh moos dane fair-TRAHK HOY-teh OON-ter-shry-ben" },
+        { target: "Kann ich eine Quittung bekommen?", en: "Can I get a receipt?", say: "kahn ikh EYE-neh KVIT-oong beh-KOM-men" },
+        { target: "Der Aufzug ist außer Betrieb.", en: "The lift is out of order.", say: "dair OWF-tsook ist OW-ser beh-TREEP", note: "Außer Betrieb is the sign you will see on lifts and machines." },
+        { target: "Dafür braucht man einen Termin.", en: "You need an appointment for that.", say: "dah-FEWR browkht mahn EYE-nen ter-MEEN", note: "Termin covers appointments and official slots." }
+      ]
+    },
+    {
+      id: "de-travel2",
+      title: "Travel problems",
+      local: "Unterwegs und Pannen",
+      level: "B1",
+      icon: "🧳",
+      tint: "#FCEDF0",
+      blurb: "Delays, cancellations, and lost luggage — staying calm and getting help.",
+      phrases: [
+        { target: "Der Zug hat zwanzig Minuten Verspätung.", en: "The train is twenty minutes late.", say: "dair tsook haht TSVAHN-tsikh mee-NOO-ten fair-SHPET-oong" },
+        { target: "Der Flug wurde gestrichen.", en: "The flight was cancelled.", say: "dair flook VOOR-deh geh-SHTRIKH-en", note: "Passive with werden: wurde gestrichen." },
+        { target: "Mein Koffer ist nicht angekommen.", en: "My suitcase hasn't arrived.", say: "mine KOF-fer ist nikht AHN-geh-kom-men" },
+        { target: "Ich möchte eine Beschwerde einreichen.", en: "I'd like to file a complaint.", say: "ikh MÖKH-teh EYE-neh beh-SHVAIR-deh INE-ry-khen" },
+        { target: "Bekomme ich eine Rückerstattung?", en: "Will I get a refund?", say: "beh-KOM-meh ikh EYE-neh ROOK-er-shtat-oong" },
+        { target: "Ich habe den Anschluss verpasst.", en: "I missed the connection.", say: "ikh HAH-beh dane AHN-shloos fair-PAHST" },
+        { target: "Von welchem Gleis fährt er ab?", en: "Which platform does it leave from?", say: "fon VEL-khem glice fairt air ap", note: "abfahren is separable: er fährt ab." },
+        { target: "Gibt es später noch einen Zug?", en: "Is there another train later?", say: "geept es SHPET-er nokh EYE-nen tsook" },
+        { target: "Mein Gepäck wurde beschädigt.", en: "My luggage was damaged.", say: "mine geh-PEK VOOR-deh beh-SHEH-dikht" },
+        { target: "Wo kann ich den Verlust melden?", en: "Where can I report the loss?", say: "voh kahn ikh dane fair-LOOST MEL-den" },
+        { target: "Wegen des Streiks steht alles still.", en: "Because of the strike everything is at a standstill.", say: "VAY-gen des stryks shtayt AH-les shtil", note: "wegen + genitive: wegen des Streiks." },
+        { target: "Zum Glück habe ich eine Versicherung.", en: "Luckily I have insurance.", say: "tsoom glook HAH-beh ikh EYE-neh fair-ZEE-kheh-roong" }
+      ]
+    },
+    {
+      id: "de-news",
+      title: "News & opinions",
+      local: "Nachrichten und Meinungen",
+      level: "B1",
+      icon: "📰",
+      tint: "#EFEDFB",
+      blurb: "Discuss a headline, hedge your view, and disagree without falling out.",
+      phrases: [
+        { target: "Hast du die Nachrichten von heute gelesen?", en: "Have you read today's news?", say: "hahst doo dee NAHKH-rikh-ten fon HOY-teh geh-LAY-zen" },
+        { target: "Laut der Zeitung steigen die Preise.", en: "According to the newspaper, prices are rising.", say: "lowt dair TSY-toong SHTY-gen dee PRY-zeh", note: "laut + dative; the verb still comes second: Laut der Zeitung steigen…" },
+        { target: "Ich bin nicht überzeugt von dem, was er sagt.", en: "I'm not convinced by what he says.", say: "ikh bin nikht oo-ber-TSOYKT fon daym vahs air zahkt" },
+        { target: "Einerseits stimmt das, andererseits nicht.", en: "On one hand that's true, on the other it isn't.", say: "INE-er-zites shtimt dahs AHN-der-er-zites nikht", note: "einerseits … andererseits is the standard balanced-opinion pair." },
+        { target: "Ich stimme zu, aber mit Bedenken.", en: "I agree, but with reservations.", say: "ikh SHTIM-meh tsoo AH-ber mit beh-DEN-ken", note: "zustimmen is separable: ich stimme zu." },
+        { target: "Das kommt darauf an, wie man es sieht.", en: "It depends how you look at it.", say: "dahs komt dah-ROWF ahn vee mahn es zeet" },
+        { target: "Alle reden darüber in den sozialen Medien.", en: "Everyone's talking about it on social media.", say: "AH-leh RAY-den dah-ROO-ber in dane zoh-TSYAH-len MAY-dee-en" },
+        { target: "Dieser Quelle traue ich nicht.", en: "I don't trust that source.", say: "DEE-zer KVEL-leh TROW-eh ikh nikht", note: "trauen takes the dative: dieser Quelle." },
+        { target: "Das ist eine komplizierte Frage.", en: "It's a complicated question.", say: "dahs ist EYE-neh kom-plee-TSEER-teh FRAH-geh" },
+        { target: "Vielleicht hat er recht.", en: "Maybe he's right.", say: "fee-LIKHT haht air rekht" },
+        { target: "Außerdem gibt es andere Probleme.", en: "Moreover, there are other problems.", say: "OWS-air-dem geept es AHN-deh-reh proh-BLAY-meh" },
+        { target: "Trotzdem verbessert sich die Lage.", en: "Nevertheless the situation is improving.", say: "TROTS-daym fair-BES-sert zikh dee LAH-geh", note: "trotzdem takes position one, so the verb follows immediately." }
+      ]
+    },
+    {
+      id: "de-env",
+      title: "Environment & city life",
+      local: "Umwelt und Stadt",
+      level: "B1",
+      icon: "🌱",
+      tint: "#EAF6F0",
+      blurb: "Recycling, transport, and the small choices that shape a city.",
+      phrases: [
+        { target: "Wir müssen den Müll trennen.", en: "We have to separate the rubbish.", say: "veer MOO-sen dane mool TREN-nen" },
+        { target: "Wo kommt der Plastikmüll hin?", en: "Where does the plastic waste go?", say: "voh komt dair PLAHS-tik-mool hin", note: "hinkommen is separable: Wo kommt … hin?" },
+        { target: "Die Innenstadt ist für Autos gesperrt.", en: "The city centre is closed to cars.", say: "dee IN-nen-shtaht ist fewr OW-tohs geh-SHPAIRT" },
+        { target: "Ich fahre lieber mit dem Fahrrad.", en: "I prefer cycling.", say: "ikh FAH-reh LEE-ber mit daym FAH-raht" },
+        { target: "Die öffentlichen Verkehrsmittel sind günstig.", en: "Public transport is cheap.", say: "dee ÖF-ent-li-khen fair-KEERS-mit-tel zint GOON-stikh" },
+        { target: "Die Luft ist hier sehr belastet.", en: "The air is very polluted here.", say: "dee looft ist heer zair beh-LAHS-tet", note: "belastet = under strain; Luftverschmutzung is air pollution." },
+        { target: "Wir können weniger Müll produzieren.", en: "We can produce less waste.", say: "veer KÖN-nen VAY-ni-ger mool proh-doo-TSEE-ren" },
+        { target: "Sie haben neue Ladestationen gebaut.", en: "They built new charging stations.", say: "zee HAH-ben NOY-eh LAH-deh-shtah-tsyon-en geh-BOWT" },
+        { target: "Der Park wurde renoviert.", en: "The park has been renovated.", say: "dair park VOOR-deh reh-noh-VEERT", note: "Passive with werden: wurde renoviert." },
+        { target: "Man muss Energie sparen.", en: "One has to save energy.", say: "mahn moos en-air-GHEE SHPAR-en", note: "man is the impersonal 'one'; the verb is third person singular." },
+        { target: "Es wäre besser, den Zug zu nehmen.", en: "It would be better to take the train.", say: "es VAY-reh BES-ser dane tsook tsoo NAY-men" },
+        { target: "Ich hoffe, dass sich bald etwas ändert.", en: "I hope something changes soon.", say: "ikh HOF-feh dahs zikh bahlt ET-vahs EN-dert" }
+      ]
+    },
+    {
+      id: "de-money",
+      title: "Money & banking",
+      local: "Geld und Bank",
+      level: "B1",
+      icon: "💳",
+      tint: "#F0EFEA",
+      blurb: "Open an account, question a charge, and talk about budgets.",
+      phrases: [
+        { target: "Ich möchte ein Girokonto eröffnen.", en: "I'd like to open a current account.", say: "ikh MÖKH-teh ine ZHEE-roh-kon-toh air-ÖF-nen" },
+        { target: "Wie hoch sind die monatlichen Gebühren?", en: "What are the monthly fees?", say: "vee hohkh zint dee MOH-naht-li-khen geh-BOO-ren" },
+        { target: "Ich habe meine PIN vergessen.", en: "I forgot my PIN.", say: "ikh HAH-beh MY-neh pin fair-GES-sen" },
+        { target: "Ich muss Bargeld abheben.", en: "I need to withdraw cash.", say: "ikh moos BAR-gelt AP-hay-ben", note: "abheben is separable: ich hebe Bargeld ab." },
+        { target: "Ist die Überweisung angekommen?", en: "Has the transfer arrived?", say: "ist dee oo-ber-VY-zoong AHN-geh-kom-men" },
+        { target: "Kann ich in Raten zahlen?", en: "Can I pay in instalments?", say: "kahn ikh in RAH-ten TSAH-len" },
+        { target: "Mir wurde doppelt berechnet.", en: "I was charged twice.", say: "meer VOOR-deh DOP-elt beh-REKH-net", note: "Passive with a dative object: mir wurde … berechnet." },
+        { target: "Mein Gehalt kommt am Ersten.", en: "My salary arrives on the first.", say: "mine geh-HALT komt ahm AIRS-ten" },
+        { target: "Ich versuche, Geld zu sparen.", en: "I'm trying to save money.", say: "ikh fair-ZOO-kheh gelt tsoo SHPAR-en" },
+        { target: "Diesen Monat habe ich zu viel ausgegeben.", en: "This month I spent too much.", say: "DEE-zen MOH-naht HAH-beh ikh tsoo feel OWS-geh-gay-ben" },
+        { target: "Ich brauche einen Kostenvoranschlag.", en: "I need an estimate.", say: "ikh BROW-kheh EYE-nen KOS-ten-for-ahn-shlahk" },
+        { target: "Wir sollten den Kontoauszug prüfen.", en: "We should check the bank statement.", say: "veer ZOL-ten dane KON-toh-ows-tsook PREW-fen" }
+      ]
     }
   ],
   vocab: [
@@ -661,6 +799,66 @@ window.LANGUAGES.de = {
         { term: "wissen", en: "to know", say: "VIS-sen", note: "Present: weiß, weißt, weiß, wissen, wisst, wissen." },
         { term: "sehen", en: "to see", say: "ZAY-en", note: "Present: sehe, siehst, sieht, sehen, seht, sehen." },
         { term: "essen", en: "to eat", say: "ES-sen", note: "Present: esse, isst, isst, essen, esst, essen." }
+      ]
+    },
+    {
+      id: "de-v-career",
+      title: "Work & career",
+      local: "Arbeit und Karriere",
+      icon: "💼",
+      tint: "#EDF2F9",
+      blurb: "The words on a job advert, in an interview, and in a contract.",
+      words: [
+        { term: "das Vorstellungsgespräch", en: "job interview", say: "dahs FOR-shtel-oongs-geh-shprekh" },
+        { term: "der Lebenslauf", en: "CV / résumé", say: "dair LAY-bens-lowf" },
+        { term: "das Gehalt", en: "salary", say: "dahs geh-HALT" },
+        { term: "die Frist", en: "deadline", say: "dee frist", note: "Eine Frist einhalten = to meet a deadline." },
+        { term: "die Besprechung", en: "meeting", say: "dee beh-SHPREKH-oong" },
+        { term: "das Praktikum", en: "internship", say: "dahs PRAK-tee-koom" },
+        { term: "die Einstellung", en: "hiring", say: "dee INE-shtel-oong", note: "Einstellen = to hire. Die Einstellung can also mean an attitude or a setting." },
+        { term: "der Ansprechpartner", en: "contact person", say: "dair AHN-shprekh-par-ner", note: "A female contact is die Ansprechpartnerin." },
+        { term: "die Stelle", en: "position / job", say: "dee SHTEL-leh", note: "Die Stelle is a specific post; die Arbeit is work in general." },
+        { term: "der Vertrag", en: "contract", say: "dair fair-TRAHK" }
+      ]
+    },
+    {
+      id: "de-v-banking",
+      title: "Money & banking",
+      local: "Geld und Bank",
+      icon: "💳",
+      tint: "#F0EFEA",
+      blurb: "Counters, cards, fees, and the words on a statement.",
+      words: [
+        { term: "das Girokonto", en: "current account", say: "dahs ZHEE-roh-kon-toh" },
+        { term: "die Überweisung", en: "bank transfer", say: "dee oo-ber-VY-zoong" },
+        { term: "das Bargeld", en: "cash", say: "dahs BAR-gelt" },
+        { term: "die Gebühr", en: "fee", say: "dee geh-BOOR", note: "Usually plural: die Gebühren." },
+        { term: "die Rate", en: "instalment", say: "dee RAH-teh", note: "In Raten zahlen = to pay in instalments." },
+        { term: "der Kassenbon", en: "till receipt", say: "dair KAH-sen-bon", note: "The shop receipt; die Quittung is a formal receipt." },
+        { term: "die Quittung", en: "receipt", say: "dee KVIT-oong" },
+        { term: "die Ersparnis", en: "savings", say: "dee air-SHPAR-nis" },
+        { term: "die Schulden", en: "debt", say: "dee SHOOL-den", note: "Always plural in this sense." },
+        { term: "der Schalter", en: "counter", say: "dair SHAHL-ter", note: "Also the ticket window at a station." }
+      ]
+    },
+    {
+      id: "de-v-city",
+      title: "Environment & city",
+      local: "Umwelt und Stadt",
+      icon: "🌱",
+      tint: "#EAF6F0",
+      blurb: "Bins, bikes, and the vocabulary of a liveable city.",
+      words: [
+        { term: "die Mülltrennung", en: "waste separation", say: "dee MOOL-tren-oong" },
+        { term: "der Abfall", en: "waste / rubbish", say: "dair AHP-fal", note: "Plural: die Abfälle." },
+        { term: "die Umweltverschmutzung", en: "environmental pollution", say: "dee OOM-velt-fair-shmoot-soong" },
+        { term: "das Viertel", en: "neighborhood", say: "dahs FEER-tel" },
+        { term: "der Bürgersteig", en: "pavement", say: "dair BOOR-ger-shtyke" },
+        { term: "der Radweg", en: "cycle path", say: "dair RAHT-vayk" },
+        { term: "die öffentlichen Verkehrsmittel", en: "public transport", say: "dee ÖF-ent-li-khen fair-KEERS-mit-tel", note: "Usually plural; das Verkehrsmittel is one mode of transport." },
+        { term: "die Energie", en: "energy", say: "dee en-air-GHEE" },
+        { term: "die Verschwendung", en: "waste (of resources)", say: "dee fair-SHVEN-doong", note: "Verschwenden = to waste. Lebensmittelverschwendung is food waste." },
+        { term: "das Stadtgrün", en: "public green space", say: "dahs SHTAHT-groon" }
       ]
     }
   ],
@@ -991,6 +1189,171 @@ window.LANGUAGES.de = {
           answer: 0
         },
         { speaker: "Lena", text: "Gerne!", en: "Gladly!" }
+      ]
+    },
+    {
+      id: "de-d-job",
+      unitId: "de-work",
+      title: "A job interview",
+      local: "Ein Vorstellungsgespräch",
+      icon: "💼",
+      place: "A hotel office in Hamburg, Tuesday morning",
+      lines: [
+        { speaker: "Chefin", text: "Guten Morgen, danke für Ihr Kommen. Erzählen Sie mir etwas über sich.", en: "Good morning, thanks for coming. Tell me a little about yourself." },
+        {
+          you: true,
+          prompt: "Say you have three years' professional experience in tourism.",
+          options: [
+            { text: "Ich habe drei Jahre Berufserfahrung im Tourismus.", en: "I have three years' professional experience in tourism." },
+            { text: "Ich habe drei Jahre Urlaub im Tourismus.", en: "I have three years' holiday in tourism." },
+            { text: "Ich habe drei Jahre im Zug gearbeitet.", en: "I worked on the train for three years." }
+          ],
+          answer: 0
+        },
+        { speaker: "Chefin", text: "Gut. Warum möchten Sie bei uns arbeiten?", en: "Good. Why do you want to work with us?" },
+        {
+          you: true,
+          prompt: "Say because you like working with people.",
+          options: [
+            { text: "Weil ich gern mit Menschen arbeite.", en: "Because I like working with people." },
+            { text: "Weil der Zug Verspätung hat.", en: "Because the train is late." },
+            { text: "Weil ich meine PIN vergessen habe.", en: "Because I forgot my PIN." }
+          ],
+          answer: 0
+        },
+        { speaker: "Chefin", text: "Wann könnten Sie anfangen?", en: "When could you start?" },
+        {
+          you: true,
+          prompt: "Say you can start immediately.",
+          options: [
+            { text: "Ich kann sofort anfangen.", en: "I can start immediately." },
+            { text: "Ich kann sofort bezahlen.", en: "I can pay immediately." },
+            { text: "Ich kann sofort kochen.", en: "I can cook immediately." }
+          ],
+          answer: 0
+        },
+        { speaker: "Chefin", text: "Perfekt. Wir melden uns bis Freitag.", en: "Perfect. We'll be in touch by Friday." },
+        {
+          you: true,
+          prompt: "Thank her and ask whether you should send any documents.",
+          options: [
+            { text: "Vielen Dank. Soll ich noch Unterlagen schicken?", en: "Many thanks. Should I send any documents?" },
+            { text: "Vielen Dank. Soll ich die Rechnung zahlen?", en: "Many thanks. Should I pay the bill?" },
+            { text: "Vielen Dank. Soll ich den Koffer tragen?", en: "Many thanks. Should I carry the suitcase?" }
+          ],
+          answer: 0
+        },
+        { speaker: "Chefin", text: "Nein, das passt so. Bis bald!", en: "No, that's fine. See you soon!" }
+      ]
+    },
+    {
+      id: "de-d-luggage",
+      unitId: "de-travel2",
+      title: "The suitcase didn't arrive",
+      local: "Der Koffer ist nicht angekommen",
+      icon: "🧳",
+      place: "Lost luggage desk, Munich airport",
+      lines: [
+        { speaker: "Mitarbeiterin", text: "Guten Tag, wie kann ich Ihnen helfen?", en: "Good day, how can I help you?" },
+        {
+          you: true,
+          prompt: "Say your suitcase hasn't arrived.",
+          options: [
+            { text: "Mein Koffer ist nicht angekommen.", en: "My suitcase hasn't arrived." },
+            { text: "Mein Flug ist in München.", en: "My flight is in Munich." },
+            { text: "Mein Zimmer ist im dritten Stock.", en: "My room is on the third floor." }
+          ],
+          answer: 0
+        },
+        { speaker: "Mitarbeiterin", text: "Haben Sie die Gepäcknummer?", en: "Do you have the baggage number?" },
+        {
+          you: true,
+          prompt: "Say yes and hand over the receipt.",
+          options: [
+            { text: "Ja, hier ist die Quittung.", en: "Yes, here's the receipt." },
+            { text: "Nein, hier ist mein Pass.", en: "No, here's my passport." },
+            { text: "Ja, hier ist die Rechnung.", en: "Yes, here's the bill." }
+          ],
+          answer: 0
+        },
+        { speaker: "Mitarbeiterin", text: "Der Koffer ist in Rom geblieben. Er kommt morgen früh.", en: "The suitcase stayed in Rome. It will arrive tomorrow morning." },
+        {
+          you: true,
+          prompt: "Ask where to report the loss and whether they can deliver it.",
+          options: [
+            { text: "Wo kann ich den Verlust melden? Können Sie ihn ins Hotel bringen?", en: "Where can I report the loss? Can you bring it to the hotel?" },
+            { text: "Wo kann ich eine Fahrkarte kaufen? Kann ich bar zahlen?", en: "Where can I buy a ticket? Can I pay cash?" },
+            { text: "Wo kann ich ein Zimmer buchen? Kann ich hier bleiben?", en: "Where can I book a room? Can I stay here?" }
+          ],
+          answer: 0
+        },
+        { speaker: "Mitarbeiterin", text: "Füllen Sie dieses Formular aus und geben Sie uns die Hotelnummer.", en: "Fill in this form and give us the hotel number." },
+        {
+          you: true,
+          prompt: "Ask if you can get a refund for things you had to buy.",
+          options: [
+            { text: "Bekomme ich eine Rückerstattung für die Ausgaben?", en: "Will I get a refund for the expenses?" },
+            { text: "Bekomme ich einen anderen Flug gratis?", en: "Will I get another flight for free?" },
+            { text: "Bekomme ich eine Quittung für den Zug?", en: "Will I get a receipt for the train?" }
+          ],
+          answer: 0
+        },
+        { speaker: "Mitarbeiterin", text: "Ja, bewahren Sie alle Belege auf.", en: "Yes, keep all the receipts." }
+      ]
+    },
+    {
+      id: "de-d-flat",
+      unitId: "de-rent",
+      title: "A leak in the bathroom",
+      local: "Ein Wasserschaden im Bad",
+      icon: "🔑",
+      place: "A phone call to the landlord",
+      lines: [
+        { speaker: "Vermieter", text: "Hallo?", en: "Hello?" },
+        {
+          you: true,
+          prompt: "Say there's water damage in the bathroom.",
+          options: [
+            { text: "Guten Tag, im Bad gibt es einen Wasserschaden.", en: "Good day, there's water damage in the bathroom." },
+            { text: "Guten Tag, im Bad gibt es eine Party.", en: "Good day, there's a party in the bathroom." },
+            { text: "Guten Tag, im Bad gibt es einen Zug.", en: "Good day, there's a train in the bathroom." }
+          ],
+          answer: 0
+        },
+        { speaker: "Vermieter", text: "Seit wann?", en: "Since when?" },
+        {
+          you: true,
+          prompt: "Say since yesterday evening.",
+          options: [
+            { text: "Seit gestern Abend.", en: "Since yesterday evening." },
+            { text: "Ab morgen früh.", en: "From tomorrow morning." },
+            { text: "Seit zwei Jahren.", en: "For two years." }
+          ],
+          answer: 0
+        },
+        { speaker: "Vermieter", text: "Verstehe. Ich rufe den Klempner an.", en: "I see. I'll call the plumber." },
+        {
+          you: true,
+          prompt: "Ask if he can come today.",
+          options: [
+            { text: "Kann er heute kommen?", en: "Can he come today?" },
+            { text: "Kann er heute zahlen?", en: "Can he pay today?" },
+            { text: "Kann er heute kochen?", en: "Can he cook today?" }
+          ],
+          answer: 0
+        },
+        { speaker: "Vermieter", text: "Am Nachmittag, gegen vier.", en: "In the afternoon, around four." },
+        {
+          you: true,
+          prompt: "Say you'll be home and ask him to confirm the time.",
+          options: [
+            { text: "Gut, ich bin zu Hause. Können Sie die Uhrzeit bestätigen?", en: "Good, I'll be home. Can you confirm the time?" },
+            { text: "Gut, ich bin im Büro. Können Sie den Preis bestätigen?", en: "Good, I'll be at the office. Can you confirm the price?" },
+            { text: "Gut, ich bin im Urlaub. Können Sie die Adresse bestätigen?", en: "Good, I'll be on holiday. Can you confirm the address?" }
+          ],
+          answer: 0
+        },
+        { speaker: "Vermieter", text: "Natürlich. Bis später.", en: "Of course. See you later." }
       ]
     }
   ]
