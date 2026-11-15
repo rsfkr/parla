@@ -16,6 +16,64 @@ Open <http://localhost:4173>.
 
 Any static file server works. Opening `index.html` directly with `file://` also mostly works, but a local server is recommended so speech features and storage behave consistently.
 
+Service workers (and therefore offline mode) only run over `localhost` or HTTPS.
+
+## Deploy
+
+The repository is the deployable artefact — no build step. Pick one host:
+
+**Cloudflare Pages** (recommended: free, unlimited bandwidth, global CDN)
+
+1. Push the repository to GitHub (or GitLab).
+2. In the Cloudflare dashboard: **Workers & Pages → Create → Pages → Connect to Git**.
+3. Framework preset **None**, build command empty, output directory `/`.
+4. **Save and Deploy.** Every push to `main` redeploys; pull requests get preview URLs.
+
+**Netlify** (fastest first deploy)
+
+1. Drag the project folder onto <https://app.netlify.com/drop>.
+2. Or connect the repo with build command empty and publish directory `.`.
+3. `netlify.toml` and `_headers` are already configured.
+
+**GitHub Pages**
+
+1. **Settings → Pages → Deploy from a branch → `main` → `/ (root)`**.
+2. `.nojekyll` keeps Jekyll out of the way.
+
+All paths in the app are relative and the manifest uses `./`, so hosting under a subpath (such as GitHub Pages project sites) works.
+
+### Releasing a change
+
+Assets are cached two ways: query strings in `index.html` and the service worker's `CACHE`. When you ship code, bump both together:
+
+1. Change every `?v=11` in `index.html` to the next number.
+2. Change `const VERSION = "11"` in `sw.js` to the same number.
+3. Run `node scripts/validate-data.js` — it fails if the two drift apart.
+
+Content-only edits (`js/data-*.js`) still need the bump, because those files are precached.
+
+## Installable app and offline mode
+
+`manifest.webmanifest`, `sw.js`, and `icons/` make Parla an installable PWA:
+
+- Android/Chrome: **Install app** from the address bar, or the install prompt.
+- iOS/Safari: **Share → Add to Home Screen**.
+- After the first visit, the shell and content are cached and the app opens without a connection. Progress stays in `localStorage`, so it works offline too.
+
+The worker serves pages network-first (a deploy appears on the next visit) and assets stale-while-revalidate. The icon set is generated from code:
+
+```bash
+python3 scripts/make-icons.py   # requires Pillow
+```
+
+## Checks
+
+```bash
+node scripts/validate-data.js
+```
+
+This validates content (unique keys, required fields, dialogue answers, duplicate options) and wiring (asset paths in `index.html`, the service-worker precache list, version consistency, and the manifest). GitHub Actions runs it plus `node --check` on every push and pull request.
+
 ## What it does
 
 - **Today** — one tap starts a daily session sized to your goal (3, 5 or 8 new phrases), plus a direct route into vocabulary.
@@ -55,13 +113,20 @@ Each language has seven dialogues: a café scene, meeting someone, finding the s
 ## Project structure
 
 ```
-index.html            App shell and script order
-css/styles.css        Design tokens, layout, components, themes, responsive rules
-js/data-it.js         Italian curriculum, vocabulary, and dialogues
-js/data-de.js         German curriculum, vocabulary, and dialogues
-js/app.js             State, persistence, SRS scheduling, session builders, speech
-js/views.js           All page rendering, navigation chrome, sheets
-js/session.js         Practice engine, role-play flow, event handling, boot
+index.html              App shell, manifest links, script order, worker registration
+manifest.webmanifest    Name, icons, standalone display, theme
+sw.js                   Offline cache and fetch strategy
+icons/                  Generated app icons (192, 512, maskable, apple-touch)
+css/styles.css          Design tokens, layout, components, themes, responsive rules
+js/data-it.js           Italian curriculum, vocabulary, and dialogues
+js/data-de.js           German curriculum, vocabulary, and dialogues
+js/app.js               State, persistence, SRS scheduling, session builders, speech
+js/views.js             All page rendering, navigation chrome, sheets
+js/session.js           Practice engine, role-play flow, event handling, boot
+scripts/validate-data.js  Content, asset, and version checks (CI)
+scripts/make-icons.py   Regenerates icons/ from code
+netlify.toml, _headers  Cache headers for Netlify / Cloudflare Pages
+.github/workflows/ci.yml  Syntax + content validation on push
 ```
 
 Load order matters: the two data files, then `app.js`, `views.js`, and `session.js`.
@@ -78,7 +143,7 @@ Everything is local. State is saved under the `localStorage` key `parla.v1`:
 - `xp` and `streak` — per language
 - `created` — first-run timestamp
 
-No analytics, accounts, or network requests are involved.
+No analytics, accounts, or third-party requests are involved. The only network traffic is loading the app's own files; speech uses the browser's built-in voices.
 
 To reset everything, open the browser console and run:
 
@@ -176,5 +241,6 @@ Vocabulary lives in `vocab[]`:
 
 - Progress is per browser profile. Clearing site data or using private browsing resets it.
 - There is no account sync and no server-side storage.
+- After a deploy, the service worker may show the cached shell for one visit; the next load picks up the new version.
 - Speech recognition is not available in every browser; the self-rating fallback keeps speaking practice usable.
 - Content spans A1–A2 everyday conversation, not exam preparation or grammar drilling.

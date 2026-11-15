@@ -1,0 +1,35 @@
+{
+  "name": "Parla — Italian & German conversation",
+  "short_name": "Parla",
+  "description": "A calm, iOS-style way to practise everyday Italian and German conversation in about ten minutes a day.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f2f2f7",
+  "theme_color": "#1d8a52",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["education", "travel"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

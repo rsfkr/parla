@@ -1,0 +1,19 @@
+# Parla is a static site: publish the repository root as-is.
+[build]
+  publish = "."
+
+# Keep the shell and the worker fresh so deploys roll out on the next visit.
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Cache-Control = "no-cache"
